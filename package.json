@@ -1,0 +1,44 @@
+{
+  "name": "oc-purge",
+  "description": "OpenCode plugin for editing session context and managing prompt presets.",
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "bun@1.4.4",
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./tui": "./src/tui/index.ts"
+  },
+  "scripts": {
+    "lint": "biome check --error-on-warnings .",
+    "lint:fix": "biome check --write --error-on-warnings .",
+    "check": "tsc --noEmit",
+    "test": "bun test --pass-with-no-tests",
+    "security": "bun audit --registry=https://registry.npmjs.org",
+    "ci": "bun run lint && bun run check && bun run test && bun run security"
+  },
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "opencode2",
+    "opencode2-plugin",
+    "plugin",
+    "context",
+    "prompt"
+  ],
+  "author": "Me0wo",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@opencode/plugin": "^2.2.5",
+    "@opentui/core": "^0.8.1",
+    "@opentui/solid": "^0.8.1",
+    "solid-js": "^1.9.18"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.4",
+    "@types/bun": "^1.4.4",
+    "typescript": "^7.0.2"
+  }
+}
