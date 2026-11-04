@@ -3,6 +3,10 @@
   "description": "OpenCode plugin for editing session context and managing prompt presets.",
   "version": "0.1.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sn0wo2/oc-purge.git"
+  },
   "packageManager": "bun@1.4.4",
   "files": [
     "src"
