@@ -40,6 +40,10 @@
     "@opentui/solid": "^0.8.1",
     "solid-js": "^1.9.18"
   },
+  "overrides": {
+    "glob": "14.0.3",
+    "minimatch": "11.0.4"
+  },
   "devDependencies": {
     "@biomejs/biome": "^2.6.4",
     "@types/bun": "^1.4.4",
